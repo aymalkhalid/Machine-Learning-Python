@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="department_RandD <= 0.5\ngini = 0.365\nsamples = 7627\nvalue = [9119, 2880]\nclass = Stayed", fillcolor="#e58139ae"] ;
+1 [label="average_montly_hours <= 275.5\ngini = 0.369\nsamples = 7222\nvalue = [8605, 2775]\nclass = Stayed", fillcolor="#e58139ad"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="satisfaction_level <= 0.465\ngini = 0.342\nsamples = 6885\nvalue = [8489, 2376]\nclass = Stayed", fillcolor="#e58139b8"] ;
+1 -> 2 ;
+3 [label="gini = 0.486\nsamples = 1777\nvalue = [1160, 1624]\nclass = quit", fillcolor="#399de549"] ;
+2 -> 3 ;
+4 [label="gini = 0.169\nsamples = 5108\nvalue = [7329, 752]\nclass = Stayed", fillcolor="#e58139e5"] ;
+2 -> 4 ;
+5 [label="number_project <= 5.5\ngini = 0.349\nsamples = 337\nvalue = [116, 399]\nclass = quit", fillcolor="#399de5b5"] ;
+1 -> 5 ;
+6 [label="gini = 0.423\nsamples = 103\nvalue = [103, 45]\nclass = Stayed", fillcolor="#e5813990"] ;
+5 -> 6 ;
+7 [label="gini = 0.068\nsamples = 234\nvalue = [13, 354]\nclass = quit", fillcolor="#399de5f6"] ;
+5 -> 7 ;
+8 [label="number_project <= 2.5\ngini = 0.282\nsamples = 405\nvalue = [514, 105]\nclass = Stayed", fillcolor="#e58139cb"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="time_spend_company <= 3.5\ngini = 0.489\nsamples = 53\nvalue = [37, 50]\nclass = quit", fillcolor="#399de542"] ;
+8 -> 9 ;
+10 [label="gini = 0.42\nsamples = 42\nvalue = [21, 49]\nclass = quit", fillcolor="#399de592"] ;
+9 -> 10 ;
+11 [label="gini = 0.111\nsamples = 11\nvalue = [16, 1]\nclass = Stayed", fillcolor="#e58139ef"] ;
+9 -> 11 ;
+12 [label="Work_accident <= 0.5\ngini = 0.185\nsamples = 352\nvalue = [477, 55]\nclass = Stayed", fillcolor="#e58139e2"] ;
+8 -> 12 ;
+13 [label="gini = 0.208\nsamples = 285\nvalue = [375, 50]\nclass = Stayed", fillcolor="#e58139dd"] ;
+12 -> 13 ;
+14 [label="gini = 0.089\nsamples = 67\nvalue = [102, 5]\nclass = Stayed", fillcolor="#e58139f2"] ;
+12 -> 14 ;
+}
